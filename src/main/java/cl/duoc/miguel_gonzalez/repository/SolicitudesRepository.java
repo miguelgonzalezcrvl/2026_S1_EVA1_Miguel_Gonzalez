@@ -31,4 +31,8 @@ public class SolicitudesRepository {
     public boolean existsById(Long id){
         return solicitudesStore.containsKey(id);
     }
+    
+    public void deleteById(Long id){
+        solicitudesStore.remove(id);
+    }
 }
